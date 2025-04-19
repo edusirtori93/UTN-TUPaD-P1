@@ -53,16 +53,17 @@ print()
 
 import random
 numero_aleatorio = random.randint(0, 10)
-print(numero_aleatorio)
-
+intentos = 1
 entrada3 = int(input("Adivina un número entre 1 y 9: "))
 
 while entrada3 != numero_aleatorio:
     if entrada3 > 0 and entrada3 <= 9:
         entrada3 = int(input("¡Incorrecto! Inténtalo de nuevo: "))
+        intentos += 1
     else:
-        entrada3 = int(input("ERROR. Ingresa un número entre 1 y 9: "))   
-print(f"¡Muy bien! El número secreto era {entrada3}")
+        entrada3 = int(input("ERROR. Ingresa un número entre 1 y 9: "))
+        intentos += 1   
+print(f"¡Muy bien! El número secreto era {entrada3} y fueron necesarios {intentos} intentos.")
 
 
 
