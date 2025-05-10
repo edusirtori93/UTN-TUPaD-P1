@@ -9,9 +9,9 @@ print()
 #2) Desarrolla un programa que solicite al usuario un número entero y determine la cantidad de
 # dígitos que contiene. 
 
-entrada = (input("Ingrese un número entero: "))
+entrada = input("Ingrese un número entero: ")
 
-while not (entrada.isdigit()):
+while not (entrada.isdigit()): 
     entrada = input("ERROR. Ingrese un número entero:")
 print(f"El número ingresado contiene {len(entrada)} dígito/s.")
 
@@ -72,7 +72,7 @@ print()
 #6)Desarrolla un programa que imprima en pantalla todos los números pares comprendidos
 #entre 0 y 100, en orden decreciente.
 
-for a in range(100, 0, -2):
+for a in range(100, -1, -2):
     print(a)
     
 
